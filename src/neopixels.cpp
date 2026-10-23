@@ -7,8 +7,6 @@ void NeoPixels::init()
 {	
     FastLED.addLeds<NEOPIXEL, PIN_NEOPIXEL_FRONT>(leds, COUNT_NEOPIXEL_FRONT);
     FastLED.addLeds<NEOPIXEL, PIN_NEOPIXEL_BACK>(leds + COUNT_NEOPIXEL_FRONT, COUNT_NEOPIXEL_BACK);
-    
-
 }
 
 void NeoPixels::fadeInAllLeds()
@@ -22,10 +20,21 @@ void NeoPixels::fadeInAllLeds()
     leds[4] = colorSettings.frontHeadLight;
     leds[5] = colorSettings.backBreakLight;
     leds[6] = colorSettings.backBreakLight;
-    setBrightness(255);
 
+    setBrightness(DEFAULT_BRIGHTNESS);
     animation_fadeAll(true);
+
+    setAllColor(Color::OFF);
+    leds[0] = colorSettings.cabinLight;
+    leds[1] = colorSettings.frontHeadLight;
+    leds[2] = colorSettings.frontTurnSignal;
+    leds[3] = colorSettings.frontTurnSignal;
+    leds[4] = colorSettings.frontHeadLight;
+    leds[5] = colorSettings.backBreakLight;
+    leds[6] = colorSettings.backBreakLight;
+    
     FastLED.show();
+    FastLED.show(); // sometimes doesnt apply after fade
 }
 
 void NeoPixels::setColor()

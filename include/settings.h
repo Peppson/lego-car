@@ -11,11 +11,12 @@
 #define DEBUG_STARTUP_LED_ENABLED 0
 #define DEBUG_TEST_FULL_BRIGHTNESS 0
 
-// Default colors
-constexpr uint DEFAULT_HEADLIGHT = 0x080502;
-constexpr uint DEFAULT_TURNSIGNAL = 0x040100;
-constexpr uint DEFAULT_CABIN = 0x251404;
-constexpr uint DEFAULT_BREAKLIGHT = 0x500000;
+// Defaults
+constexpr uint DEFAULT_HEADLIGHT = 0x140b04;
+constexpr uint DEFAULT_TURNSIGNAL = 0x080301;
+constexpr uint DEFAULT_CABIN = 0x2c1907;
+constexpr uint DEFAULT_BREAKLIGHT = 0x770000;
+constexpr uint8_t DEFAULT_BRIGHTNESS = 100;
 
 // I/O
 constexpr int PIN_BTN_FLEX = 4;

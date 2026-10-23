@@ -4,4 +4,4 @@
 cd /home/jw/gitrepos/lego-car && ~/.platformio/penv/bin/platformio run --environment lego_ota --target upload
 
 // MicroSlop
-cd C:\Users\jw\Desktop\lego-car && ~/.platformio/penv/bin/platformio run --environment lego_ota --target upload
+cd /c/Users/jw/Desktop/lego-car && /c/Users/jw/.platformio/penv/Scripts/platformio.exe run -e lego_ota -t upload
