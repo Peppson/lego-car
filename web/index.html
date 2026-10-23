@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>LEGO Car</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Lego Car" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="panel">
+        <section class="groups">
+            <button class="group active" data-group="frontHeadLight" type="button">
+                <span class="swatch" id="swatch-frontHeadLight"></span>
+                <span>Headlights</span>
+                <code id="hex-frontHeadLight">#FFFFFF</code>
+            </button>
+            <button class="group" data-group="frontTurnSignal" type="button">
+                <span class="swatch" id="swatch-frontTurnSignal"></span>
+                <span>Turn signals</span>
+                <code id="hex-frontTurnSignal">#FFA500</code>
+            </button>
+            <button class="group" data-group="cabinLight" type="button">
+                <span class="swatch" id="swatch-cabinLight"></span>
+                <span>Cabin</span>
+                <code id="hex-cabinLight">#FFFFFF</code>
+            </button>
+            <button class="group" data-group="backBreakLight" type="button">
+                <span class="swatch" id="swatch-backBreakLight"></span>
+                <span>Brake lights</span>
+                <code id="hex-backBreakLight">#FF0000</code>
+            </button>
+        </section>
+
+        <section class="picker-section">
+            <div class="picker-heading">
+                <h2 id="selected-title">Headlights</h2>
+                <code id="selected-hex">#FFFFFF</code>
+            </div>
+
+            <div class="picker-area">
+                <canvas id="picker-canvas" width="360" height="260"></canvas>
+                <canvas id="hue-canvas" width="360" height="32"></canvas>
+            </div>
+
+            <div class="action-buttons">
+                <button id="restart-button" class="action-button restart">Restart</button>
+                <button id="defaults-button" class="action-button">Defaults</button>
+                <button id="apply-button" class="action-button">Apply</button>
+            </div>
+
+            <p class="status" id="status" role="status">Ready</p>
+        </section>
+    </main>
+</body>
+
+</html>

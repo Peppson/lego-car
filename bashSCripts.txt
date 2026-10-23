@@ -1,0 +1,7 @@
+// Upload OTA
+
+// Linux
+cd /home/jw/gitrepos/lego-car && ~/.platformio/penv/bin/platformio run --environment lego_ota --target upload
+
+// MicroSlop
+cd C:\Users\jw\Desktop\lego-car && ~/.platformio/penv/bin/platformio run --environment lego_ota --target upload
