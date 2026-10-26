@@ -14,8 +14,8 @@
 // Defaults
 constexpr uint DEFAULT_HEADLIGHT = 0x140b04;
 constexpr uint DEFAULT_TURNSIGNAL = 0x080301;
-constexpr uint DEFAULT_CABIN = 0x2c1907;
-constexpr uint DEFAULT_BREAKLIGHT = 0x770000;
+constexpr uint DEFAULT_CABIN = 0x341A06; //0x2c1907;
+constexpr uint DEFAULT_BREAKLIGHT = 0x500000;
 constexpr uint8_t DEFAULT_BRIGHTNESS = 100;
 
 // I/O
